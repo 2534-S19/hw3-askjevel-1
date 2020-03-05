@@ -1,8 +1,8 @@
 /*
  * myGPIO.h
  *
- *  Created on:
- *      Author:
+ *  Created on: Mar 1, 2020
+ *      Author: Anders Skjeveland
  *
  */
 
@@ -50,5 +50,21 @@ void turnOff_BoosterpackLEDBlue();
 
 // TODO: Define any constants that are local to myGPIO.c using #define
 
+#define PRESSED 0
+
+//Define button bits
+#define LAUNCHPAD_S1 BIT1
+#define LAUNCHPAD_S2 BIT4
+#define BOOSTER_S1 BIT1
+#define BOOSTER_S2 BIT5
+
+//Define LED bits
+#define LP_LED1  BIT0
+#define LED2_R BIT0
+#define LED2_G BIT1
+#define LED2_B BIT2
+#define BLED_R BIT6
+#define BLED_G BIT4
+#define BLED_B BIT6
 
 #endif /* MYGPIO_H_ */
